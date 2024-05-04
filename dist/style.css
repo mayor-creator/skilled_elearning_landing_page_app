@@ -1,0 +1,106 @@
+/*
+  CSS Reset
+  Author: Josh Comeau 
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  --color-steel-blue: hsl(234, 25%, 52%);
+  --color-dark-blue: hsl(233, 54%, 16%);
+  --color-dusty-chimney: hsl(131, 134, 154);
+  --color-flamingo: hsl(341, 92%, 62%);
+  --color-poodle-skirt: hsl(341, 100%, 83%);
+  --color-white: #FFFFFF;
+}
+
+/* plus-jakarta-sans-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/plus-jakarta-sans-v8-latin/plus-jakarta-sans-v8-latin-500.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../../fonts/plus-jakarta-sans-v8-latin/plus-jakarta-sans-v8-latin-500.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../fonts/plus-jakarta-sans-v8-latin/plus-jakarta-sans-v8-latin-700.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../../fonts/plus-jakarta-sans-v8-latin/plus-jakarta-sans-v8-latin-800.woff2") format("woff2");
+}
+h1 {
+  font-size: clamp(2.5rem, 2.1478873239rem + 1.5023474178vw, 3.5rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 1.323943662rem + 0.7511737089vw, 2rem);
+}
+
+h3 {
+  font-size: clamp(1.25rem, 1.161971831rem + 0.3755868545vw, 1.5rem);
+}
+
+p {
+  font-size: clamp(1rem, 0.9559859155rem + 0.1877934272vw, 1.125rem);
+}/*# sourceMappingURL=style.css.map */

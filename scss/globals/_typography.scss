@@ -1,0 +1,17 @@
+@use "../util/functions" as f;
+
+h1 {
+  font-size: clamp(f.rem(40), 2.147887323943662rem + 1.5023474178403755vw, f.rem(56));
+}
+
+h2 {
+  font-size: clamp(f.rem(24), 1.323943661971831rem + 0.7511737089201878vw, f.rem(32));
+}
+
+h3 {
+  font-size: clamp(f.rem(20), 1.1619718309859155rem + 0.3755868544600939vw, f.rem(24));
+}
+
+p {
+  font-size: clamp(f.rem(16), 0.9559859154929577rem + 0.18779342723004694vw, f.rem(18));
+}

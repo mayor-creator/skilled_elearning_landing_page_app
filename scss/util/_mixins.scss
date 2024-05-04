@@ -1,0 +1,13 @@
+@use "./functions" as f;
+
+@mixin button_two_idle {
+  border: none;
+  border-radius: f.rem(50);
+  background-image: linear-gradient(0deg, #FF6F48, #F02AA6);
+}
+
+@mixin button_three_idle {
+  border-radius: f.rem(50);
+  border: none;
+  background-image: linear-gradient(0deg, #F02AA6, #4851FF);
+}
