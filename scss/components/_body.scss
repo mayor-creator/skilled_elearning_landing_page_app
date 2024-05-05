@@ -1,0 +1,15 @@
+@use "../util/breakpoints" as b;
+@use "../util/functions" as f;
+@use "../util/mixins" as m;
+@use "../util/variables" as v;
+
+body {
+  font-family: v.$font-family;
+  background-color: var(--color-white);
+}
+
+.wrapper {
+  width: min(100% - f.rem(32), f.rem(1110));
+  margin-inline: auto;
+  border: 1px solid red;
+}

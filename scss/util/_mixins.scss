@@ -1,13 +1,54 @@
 @use "./functions" as f;
+@use "./variables" as v;
 
 @mixin button_two_idle {
   border: none;
   border-radius: f.rem(50);
-  background-image: linear-gradient(0deg, #FF6F48, #F02AA6);
+  background-image: linear-gradient(0deg, hsl(322, 87%, 55%), hsl(13, 100%, 64%));
+  color: var(--color-white);
+  font-size: f.rem(16);
+  font-weight: v.$font-bold;
+  width: f.rem(167);
+  height: f.rem(56);
 }
 
 @mixin button_three_idle {
   border-radius: f.rem(50);
   border: none;
   background-image: linear-gradient(0deg, #F02AA6, #4851FF);
+  color: var(--color-white);
+  font-size: f.rem(16);
+  font-weight: v.$font-bold;
+  width: f.rem(167);
+  height: f.rem(56);
+}
+
+@mixin mobile_header_button {
+  border: none;
+  border-radius: f.rem(50);
+  background-color: var(--color-dark-blue);
+  color: var(--color-white);
+  font-size: f.rem(16);
+  font-weight: v.$font-bold;
+  width: f.rem(140);
+  height: f.rem(48);
+  padding: f.rem(10);
+}
+
+@mixin header_button_hover {
+  background-color: var(--color-steel-blue);
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+@mixin items {
+  border-radius: f.rem(10);
+  margin-top: f.rem(30);
+  padding-left: f.rem(34);
+  padding-right: f.rem(10);
+}
+
+@mixin images {
+  position: relative;
+  bottom: f.rem(30);
 }

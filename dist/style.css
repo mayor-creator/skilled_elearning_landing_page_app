@@ -54,7 +54,7 @@ h6 {
 :root {
   --color-steel-blue: hsl(234, 25%, 52%);
   --color-dark-blue: hsl(233, 54%, 16%);
-  --color-dusty-chimney: hsl(131, 134, 154);
+  --color-dusty-chimney: hsl(234, 10%, 56%);
   --color-flamingo: hsl(341, 92%, 62%);
   --color-poodle-skirt: hsl(341, 100%, 83%);
   --color-white: #FFFFFF;
@@ -89,6 +89,14 @@ h6 {
   font-weight: 800;
   src: url("../../fonts/plus-jakarta-sans-v8-latin/plus-jakarta-sans-v8-latin-800.woff2") format("woff2");
 }
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.1;
+  font-weight: 800;
+}
+
 h1 {
   font-size: clamp(2.5rem, 2.1478873239rem + 1.5023474178vw, 3.5rem);
 }
@@ -103,4 +111,104 @@ h3 {
 
 p {
   font-size: clamp(1rem, 0.9559859155rem + 0.1877934272vw, 1.125rem);
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: var(--color-white);
+}
+
+.wrapper {
+  width: min(100% - 2rem, 69.375rem);
+  margin-inline: auto;
+  border: 1px solid red;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+.header__logo {
+  width: 5.5625rem;
+}
+.header__button {
+  border: none;
+  border-radius: 3.125rem;
+  background-color: var(--color-dark-blue);
+  color: var(--color-white);
+  font-size: 1rem;
+  font-weight: 700;
+  width: 8.75rem;
+  height: 3rem;
+  padding: 0.625rem;
+}
+.header__button:hover {
+  background-color: var(--color-steel-blue);
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.main__hero_heading {
+  color: var(--color-dark-blue);
+  padding-bottom: 1.5rem;
+}
+.main__hero_message {
+  color: var(--color-dusty-chimney);
+  padding-bottom: 1.5rem;
+}
+.main__hero_button {
+  border: none;
+  border-radius: 3.125rem;
+  background-image: linear-gradient(0deg, hsl(322, 87%, 55%), hsl(13, 100%, 64%));
+  color: var(--color-white);
+  font-size: 1rem;
+  font-weight: 700;
+  width: 10.4375rem;
+  height: 3.5rem;
+}
+.main__hero_bottom {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.main__information_courses {
+  background-image: linear-gradient(0deg, hsl(322, 87%, 55%), hsl(13, 100%, 64%));
+  border-radius: 0.625rem;
+  color: var(--color-white);
+  height: 7.5rem;
+}
+.main__information_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main__information_heading {
+  margin: 0 auto;
+  width: 80%;
+  padding-top: 1.5rem;
+  line-height: 1.4;
+}
+.main__information_animation, .main__information_design, .main__information_photography, .main__information_crypto, .main__information_business {
+  border-radius: 0.625rem;
+  margin-top: 1.875rem;
+  padding-left: 2.125rem;
+  padding-right: 0.625rem;
+  box-shadow: 0 0 0.625rem #979797;
+}
+.main__information_animation_image, .main__information_design_image, .main__information_photography_image, .main__information_crypto_image, .main__information_business_image {
+  position: relative;
+  bottom: 1.875rem;
+}
+.main__information_animation_heading, .main__information_design_heading, .main__information_photography_heading, .main__information_crypto_heading, .main__information_business_heading {
+  padding-bottom: 1.25rem;
+  color: var(--color-dark-blue);
+}
+.main__information_animation_message, .main__information_design_message, .main__information_photography_message, .main__information_crypto_message, .main__information_business_message {
+  padding-bottom: 1.25rem;
+}
+.main__information_animation_onset, .main__information_design_onset, .main__information_photography_onset, .main__information_crypto_onset, .main__information_business_onset {
+  padding-bottom: 1.25rem;
 }/*# sourceMappingURL=style.css.map */

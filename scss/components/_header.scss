@@ -1,0 +1,26 @@
+@use "../util/breakpoints" as b;
+@use "../util/functions" as f;
+@use "../util/mixins" as m;
+@use "../util/variables" as v;
+
+.header {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: f.rem(20);
+    padding-bottom: f.rem(20);
+  }
+
+  &__logo {
+    width: f.rem(89);
+  }
+
+  &__button {
+    @include m.mobile_header_button;
+  }
+
+  &__button:hover {
+    @include m.header_button_hover;
+  }
+}

@@ -1,0 +1,25 @@
+@use "../util/breakpoints" as b;
+@use "../util/functions" as f;
+@use "../util/mixins" as m;
+@use "../util/variables" as v;
+
+.main {
+  &__hero_heading {
+    color: var(--color-dark-blue);
+    padding-bottom: f.rem(24);
+  }
+
+  &__hero_message {
+    color: var(--color-dusty-chimney);
+    padding-bottom: f.rem(24);
+  }
+
+  &__hero_button {
+    @include m.button_two_idle;
+  }
+
+  &__hero_bottom {
+    padding-top: f.rem(40);
+    padding-bottom: f.rem(40);
+  }
+}

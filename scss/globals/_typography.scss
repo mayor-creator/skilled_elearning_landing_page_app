@@ -1,7 +1,17 @@
 @use "../util/functions" as f;
+@use "../util/variables" as v;
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.1;
+  font-weight: v.$font-extra-bold;
+}
 
 h1 {
   font-size: clamp(f.rem(40), 2.147887323943662rem + 1.5023474178403755vw, f.rem(56));
+
 }
 
 h2 {
