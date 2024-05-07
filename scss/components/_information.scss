@@ -4,6 +4,10 @@
 @use "../util/variables" as v;
 
 .main {
+  &__information {
+    padding-bottom: f.rem(80);
+  }
+
   &__information_courses {
     background-image: linear-gradient(0deg, hsl(322, 87%, 55%), hsl(13, 100%, 64%));
     border-radius: f.rem(10);
@@ -15,6 +19,27 @@
     display: flex;
     flex-direction: column;
     gap: f.rem(16);
+
+    @include b.breakpoint(medium) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include b.breakpoint(large) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  &__information_courses {
+    @include b.breakpoint(medium) {
+      height: f.rem(259);
+      margin-top: f.rem(30);
+    }
+
+    @include b.breakpoint(large) {
+      height: f.rem(332);
+    }
+
   }
 
   &__information_heading {
@@ -56,6 +81,7 @@
   &__information_crypto_message,
   &__information_business_message {
     padding-bottom: f.rem(20);
+    color: var(--color-dusty-chimney);
   }
 
   &__information_animation_onset,
@@ -63,6 +89,33 @@
   &__information_photography_onset,
   &__information_crypto_onset,
   &__information_business_onset {
+    color: var(--color-flamingo);
     padding-bottom: f.rem(20);
+    font-weight: v.$font-bold;
+  }
+
+  &__information_animation_onset:hover {
+    color: var(--color-poodle-skirt);
+    cursor: pointer;
+  }
+
+  &__information_design_onset:hover {
+    color: var(--color-poodle-skirt);
+    cursor: pointer;
+  }
+
+  &__information_photography_onset:hover {
+    color: var(--color-poodle-skirt);
+    cursor: pointer;
+  }
+
+  &__information_crypto_onset:hover {
+    color: var(--color-poodle-skirt);
+    cursor: pointer;
+  }
+
+  &__information_business_onset:hover {
+    color: var(--color-poodle-skirt);
+    cursor: pointer;
   }
 }

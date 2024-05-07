@@ -2,3 +2,29 @@
 @use "../util/functions" as f;
 @use "../util/mixins" as m;
 @use "../util/variables" as v;
+
+.footer {
+  background-color: var(--color-dark-blue);
+  height: f.rem(120);
+  display: flex;
+  align-items: center;
+
+  &__container {
+    display: flex;
+  }
+
+  &__logo {
+    width: f.rem(89);
+    height: f.rem(35);
+    margin: auto auto auto 0;
+
+    @include b.breakpoint(large) {
+      width: f.rem(111.17);
+      height: f.rem(27.68)
+    }
+  }
+
+  &__button {
+    @include m.button_three_idle;
+  }
+}

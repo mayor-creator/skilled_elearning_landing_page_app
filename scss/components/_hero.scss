@@ -4,6 +4,10 @@
 @use "../util/variables" as v;
 
 .main {
+  &__hero {
+    @include b.breakpoint(medium) {}
+  }
+
   &__hero_heading {
     color: var(--color-dark-blue);
     padding-bottom: f.rem(24);
@@ -18,8 +22,13 @@
     @include m.button_two_idle;
   }
 
-  &__hero_bottom {
-    padding-top: f.rem(40);
-    padding-bottom: f.rem(40);
+  &__hero_image {
+    height: auto;
+    max-inline-size: 100%;
+    block-size: auto;
+
+    @include b.breakpoint(medium) {
+      border: 2px solid green;
+    }
   }
 }
