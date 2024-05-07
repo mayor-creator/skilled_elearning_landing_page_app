@@ -29,12 +29,14 @@
           <button class="main__hero_button">Get Started</button>
         </div>
         <div class="main__hero_bottom">
-          <picture class="main_hero_picture">
-            <source media="(max-width: 699.98px)" srcset="./images/image-hero-mobile@2x.png">
-            <source media="(min-width: 900px)" srcset="./images/image-hero-tablet@2x.png">
-            <source media="(min-width: 1440px)" srcset="./images/image-hero-desktop@2x.png">
-            <img class="main__hero_image" src="./images/image-hero-desktop@2x.png" alt="a lady holding a cup"
-              width="2092" height="1876">
+          <picture>
+            <source media="(max-width:480px )" srcset="./images/image-hero-mobile@2x.png" sizes="(max-width: 700px) 480px,
+                       800px">
+            <source media=" (max-width:960px)" srcset="./images/image-hero-tablet@2x.png"
+              sizes="(min-width: 800px) 640.71px">
+            <source media=" (min-width:1440px)" srcset="./images/image-hero-desktop@2x.png"
+              sizes="(min-width:1280px) 991.63px">
+            <img class="main__hero_image" src="./images/image-hero-desktop@2x.png" alt="a lady drinking coffee">
           </picture>
         </div>
       </article>
