@@ -20,7 +20,7 @@
     </header>
     <main class="main">
       <article class="main__hero">
-        <div class="main_hero_top">
+        <div class="main__hero_top">
           <h1 class="main__hero_heading">Maximize skill, minimize budget</h1>
           <p class="main__hero_message">
             Our modern courses across a range of in-demand skills will give you the
@@ -30,12 +30,20 @@
         </div>
         <div class="main__hero_bottom">
           <picture>
-            <source media="(max-width:480px )" srcset="./images/image-hero-mobile@2x.png" sizes="(max-width: 700px) 480px,
-                       800px">
-            <source media=" (max-width:960px)" srcset="./images/image-hero-tablet@2x.png"
-              sizes="(min-width: 800px) 640.71px">
-            <source media=" (min-width:1440px)" srcset="./images/image-hero-desktop@2x.png"
-              sizes="(min-width:1280px) 991.63px">
+            <!--image for desktop screen-->
+            <source media="(min-width:1200px)" srcset="./images/image-hero-desktop@2x.webp 1200w" sizes="100vw">
+            <source media="(min-width:1200px)" srcset="./images/image-hero-desktop.png 1200w" sizes="100vw">
+            <!--image for tablet -->
+            <source media="(min-width:768px)" srcset="./images/image-hero-tablet@2x.webp 800w"
+              sizes="(min-width:768px) 80vw">
+            <source media=" (min-width:768px)" srcset="./images/image-hero-tablet.png 800w"
+              sizes="(min-width:768px) 80vw">
+            <!--image for mobile-->
+            <source media="(max-width:480px)" srcset="./images/image-hero-mobile@2x.webp 320w"
+              sizes="(max-width:480px) 90vw">
+            <source media="(min-width:480px)" srcset="./images/image-hero-mobile.png 320w"
+              sizes="(max-width:480px) 90vw">
+            <!--fallback image-->
             <img class="main__hero_image" src="./images/image-hero-desktop@2x.png" alt="a lady drinking coffee">
           </picture>
         </div>
