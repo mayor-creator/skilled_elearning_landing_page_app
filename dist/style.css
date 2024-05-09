@@ -120,7 +120,6 @@ body {
 .wrapper {
   width: min(100% - 2rem, 69.375rem);
   margin-inline: auto;
-  border: 1px solid red;
 }
 
 .footer {
@@ -181,6 +180,16 @@ body {
   cursor: pointer;
 }
 
+@media (min-width: 43.75em) {
+  .main__hero {
+    display: flex;
+  }
+}
+@media (min-width: 43.75em) {
+  .main__hero_top {
+    flex-grow: 1;
+  }
+}
 .main__hero_heading {
   color: var(--color-dark-blue);
   padding-bottom: 1.5rem;
@@ -199,14 +208,13 @@ body {
   width: 10.4375rem;
   height: 3.5rem;
 }
-.main__hero_image {
-  height: auto;
-  max-inline-size: 100%;
-  block-size: auto;
-}
 @media (min-width: 43.75em) {
   .main__hero_image {
-    border: 2px solid green;
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 100px;
+    left: 180px;
   }
 }
 

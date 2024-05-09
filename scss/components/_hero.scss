@@ -5,6 +5,18 @@
 
 .main {
   &__hero {
+    @include b.breakpoint(medium) {
+      display: flex;
+    }
+  }
+
+  &__hero_top {
+    @include b.breakpoint(medium) {
+      flex-grow: 1;
+    }
+  }
+
+  &__hero_bottom {
     @include b.breakpoint(medium) {}
   }
 
@@ -23,12 +35,15 @@
   }
 
   &__hero_image {
-    height: auto;
-    max-inline-size: 100%;
-    block-size: auto;
-
     @include b.breakpoint(medium) {
-      border: 2px solid green;
+      width: 100%;
+      height: auto;
+      position: relative;
+      bottom: 100px;
+      left: 180px;
     }
   }
 }
+
+//display: grid;
+//grid-template-columns: auto 300px;
