@@ -12,12 +12,21 @@
 
   &__hero_top {
     @include b.breakpoint(medium) {
-      flex-grow: 1;
+      max-width: f.rem(398);
+    }
+
+    @include b.breakpoint(large) {
+      max-width: f.rem(457);
     }
   }
 
   &__hero_bottom {
-    @include b.breakpoint(medium) {}
+    @include b.breakpoint(medium) {
+      border: 2px solid yellowgreen;
+      position: relative;
+      width: f.rem(320.355);
+      height: f.rem(320.355);
+    }
   }
 
   &__hero_heading {
@@ -36,14 +45,19 @@
 
   &__hero_image {
     @include b.breakpoint(medium) {
-      width: 100%;
-      height: auto;
-      position: relative;
-      bottom: 100px;
-      left: 180px;
+      aspect-ratio: 16/9;
+      border: 4px solid salmon;
+    }
+  }
+
+  &__hero_bottom &__hero_image {
+    @include b.breakpoint(medium) {
+      position: absolute;
+      top: 0;
+      right: 0;
     }
   }
 }
 
 //display: grid;
-//grid-template-columns: auto 300px;
+//grid-template-columns: 400px 1fr;
