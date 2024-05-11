@@ -160,6 +160,11 @@ body {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
+@media (min-width: 43.75em) {
+  .header__container {
+    padding-bottom: 3.75rem;
+  }
+}
 .header__logo {
   width: 5.5625rem;
 }
@@ -187,20 +192,12 @@ body {
 }
 @media (min-width: 43.75em) {
   .main__hero_top {
-    max-width: 24.875rem;
+    max-width: 26.25rem;
   }
 }
 @media (min-width: 56.25em) {
   .main__hero_top {
     max-width: 28.5625rem;
-  }
-}
-@media (min-width: 43.75em) {
-  .main__hero_bottom {
-    border: 2px solid yellowgreen;
-    position: relative;
-    width: 20.0221875rem;
-    height: 20.0221875rem;
   }
 }
 .main__hero_heading {
@@ -224,19 +221,54 @@ body {
 @media (min-width: 43.75em) {
   .main__hero_image {
     aspect-ratio: 16/9;
-    border: 4px solid salmon;
+    width: 40rem;
+    height: 40rem;
+  }
+}
+@media (min-width: 56.25em) {
+  .main__hero_image {
+    width: 55.6875rem;
+    height: 52.25rem;
   }
 }
 @media (min-width: 43.75em) {
   .main__hero_bottom .main__hero_image {
     position: absolute;
-    top: 0;
-    right: 0;
+    bottom: 28.125rem;
+    left: 25rem;
+  }
+}
+@media screen and (min-width: 51.25em) and (max-width: 52.125em) {
+  .main__hero_bottom .main__hero_image {
+    bottom: 37.5rem;
+    left: 28.125rem;
+  }
+}
+@media screen and (min-width: 50em) and (max-width: 50rem) {
+  .main__hero_bottom .main__hero_image {
+    bottom: 43.75rem;
+    left: 28.125rem;
+  }
+}
+@media (min-width: 90em) {
+  .main__hero_bottom .main__hero_image {
+    bottom: 200px;
+    left: 800px;
   }
 }
 
 .main__information {
   padding-bottom: 5rem;
+}
+@media (min-width: 43.75em) {
+  .main__information {
+    padding-top: 11.25rem;
+  }
+}
+@media (min-width: 90em) {
+  .main__information {
+    padding-top: 17.5rem;
+  }
 }
 .main__information_courses {
   background-image: linear-gradient(0deg, hsl(322, 87%, 55%), hsl(13, 100%, 64%));

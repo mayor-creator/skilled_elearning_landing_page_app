@@ -6,6 +6,14 @@
 .main {
   &__information {
     padding-bottom: f.rem(80);
+
+    @include b.breakpoint(medium) {
+      padding-top: f.rem(180);
+    }
+
+    @include b.breakpoint(xlarge) {
+      padding-top: f.rem(280);
+    }
   }
 
   &__information_courses {

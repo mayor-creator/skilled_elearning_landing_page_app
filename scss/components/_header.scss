@@ -10,6 +10,10 @@
     align-items: center;
     padding-top: f.rem(20);
     padding-bottom: f.rem(20);
+
+    @include b.breakpoint(medium) {
+      padding-bottom: f.rem(60);
+    }
   }
 
   &__logo {

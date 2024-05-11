@@ -12,7 +12,7 @@
 
   &__hero_top {
     @include b.breakpoint(medium) {
-      max-width: f.rem(398);
+      max-width: f.rem(420);
     }
 
     @include b.breakpoint(large) {
@@ -21,12 +21,7 @@
   }
 
   &__hero_bottom {
-    @include b.breakpoint(medium) {
-      border: 2px solid yellowgreen;
-      position: relative;
-      width: f.rem(320.355);
-      height: f.rem(320.355);
-    }
+    @include b.breakpoint(medium) {}
   }
 
   &__hero_heading {
@@ -46,18 +41,39 @@
   &__hero_image {
     @include b.breakpoint(medium) {
       aspect-ratio: 16/9;
-      border: 4px solid salmon;
+      //border: 4px solid salmon;
+      width: f.rem(640);
+      height: f.rem(640);
+    }
+
+    @include b.breakpoint(large) {
+      width: f.rem(891);
+      height: f.rem(836);
     }
   }
 
   &__hero_bottom &__hero_image {
     @include b.breakpoint(medium) {
       position: absolute;
-      top: 0;
-      right: 0;
+      bottom: f.rem(450);
+      left: f.rem(400);
+    }
+
+    @media screen and (min-width: f.em(820)) and (max-width: f.em(834)) {
+      bottom: f.rem(600);
+      left: f.rem(450);
+    }
+
+    @media screen and (min-width: f.em(800)) and (max-width: f.rem(800)) {
+      bottom: f.rem(700);
+      left: f.rem(450);
+    }
+
+    @include b.breakpoint(xlarge) {
+      // bottom: 20px;
+      // left: 650px;
+      bottom: 200px;
+      left: 800px;
     }
   }
 }
-
-//display: grid;
-//grid-template-columns: 400px 1fr;
