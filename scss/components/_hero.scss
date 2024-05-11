@@ -70,9 +70,7 @@
     }
 
     @include b.breakpoint(xlarge) {
-      // bottom: 20px;
-      // left: 650px;
-      bottom: 200px;
+      bottom: 240px;
       left: 800px;
     }
   }

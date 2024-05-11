@@ -252,7 +252,7 @@ body {
 }
 @media (min-width: 90em) {
   .main__hero_bottom .main__hero_image {
-    bottom: 200px;
+    bottom: 240px;
     left: 800px;
   }
 }
